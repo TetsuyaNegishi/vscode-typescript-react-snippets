@@ -189,47 +189,19 @@
 
   "import React": {
     "prefix": "imr",
-    "body": ["import React from 'react'", ""]
+    "body": ["import * as React from 'react'", ""]
   },
   "import ReactDOM": {
     "prefix": "imrd",
-    "body": ["import ReactDOM from 'react-dom'", ""]
-  },
-  "import React, { Component }": {
-    "prefix": "imrc",
-    "body": ["import React, { Component } from 'react'", ""]
-  },
-  "import React, { Component } & PropTypes": {
-    "prefix": "imrcp",
-    "body": ["import React, { Component } from 'react'", "import PropTypes from 'prop-types'", ""]
-  },
-  "import React, { PureComponent }": {
-    "prefix": "imrpc",
-    "body": ["import React, { PureComponent } from 'react'", ""]
-  },
-  "import React, { PureComponent } & PropTypes": {
-    "prefix": "imrpcp",
-    "body": [
-      "import React, { PureComponent } from 'react'",
-      "import PropTypes from 'prop-types'",
-      ""
-    ]
-  },
-  "import React, { memo }": {
-    "prefix": "imrm",
-    "body": ["import React, { memo } from 'react'", ""]
-  },
-  "import React, { memo } & PropTypes": {
-    "prefix": "imrmp",
-    "body": ["import React, { memo } from 'react'", "import PropTypes from 'prop-types'", ""]
+    "body": ["import * as ReactDOM from 'react-dom'", ""]
   },
   "import PropTypes": {
     "prefix": "impt",
     "body": ["import PropTypes from 'prop-types'", ""]
   },
-  "import React Router": { 
+  "import React Router": {
     "prefix": "imrr",
-    "body": ["import { BrowserRouter as Router, Route, Link } from 'react-router-dom'", ""] 
+    "body": ["import { BrowserRouter as Router, Route, Link } from 'react-router-dom'", ""]
    },
   "import redux statement": {
     "prefix": "redux",

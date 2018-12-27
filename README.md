@@ -53,14 +53,8 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 |      Prefix | Method                                                                              |
 | ----------: | ----------------------------------------------------------------------------------- |
-|      `imr→` | `import React from 'react'`                                                         |
-|     `imrd→` | `import ReactDOM from 'react-dom'`                                                  |
-|     `imrc→` | `import React, { Component } from 'react'`                                          |
-|    `imrcp→` | `import React, { Component } from 'react' & import PropTypes from 'prop-types'`     |
-|    `imrpc→` | `import React, { PureComponent } from 'react'`                                      |
-|   `imrpcp→` | `import React, { PureComponent } from 'react' & import PropTypes from 'prop-types'` |
-|     `imrm→` | `import React, { memo } from 'react'`                                               |
-|    `imrmp→` | `import React, { memo } from 'react' & import PropTypes from 'prop-types'`          |
+|      `imr→` | `import * as React from 'react'`                                                         |
+|     `imrd→` | `import * as ReactDOM from 'react-dom'`                                                  |
 |     `impt→` | `import PropTypes from 'prop-types'`                                                |
 |     `imrr→` | `import { BrowserRouter as Router, Route, Link } from 'react-router-dom'`           |
 |    `redux→` | `import { connect } from 'react-redux'`                                             |
