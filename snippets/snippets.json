@@ -210,9 +210,9 @@
   "reactClassCompoment": {
     "prefix": "rcc",
     "body": [
-      "import React, { Component } from 'react'",
+      "import * as React from 'react'",
       "",
-      "export default class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "export default class ${1:${TM_FILENAME_BASE}} extends React.Component {",
       "  render() {",
       "    return (",
       "      <div>",
@@ -228,9 +228,9 @@
   "reactClassExportComponent": {
     "prefix": "rce",
     "body": [
-      "import React, { Component } from 'react'",
+      "import * as React from 'react'",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "export class ${1:${TM_FILENAME_BASE}} extends React.Component {",
       "  render() {",
       "    return (",
       "      <div>",
@@ -248,7 +248,7 @@
   "reactFunctionalExportComponent": {
     "prefix": "rfce",
     "body": [
-      "import React from 'react'",
+      "import * as React from 'react'",
       "",
       "function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
@@ -266,7 +266,7 @@
   "reactFunctionalComponent": {
     "prefix": "rfc",
     "body": [
-      "import React from 'react'",
+      "import * as React from 'react'",
       "",
       "export default function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
@@ -306,9 +306,9 @@
   "reactArrowFunctionComponent": {
     "prefix": "rafc",
     "body": [
-      "import React from 'react'",
+      "import * as React from 'react'",
       "",
-      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "const ${1:${TM_FILENAME_BASE}}: React.SFC = () => {",
       "  return (",
       "    <div>",
       "      $0",
@@ -326,7 +326,7 @@
     "body": [
       "import React from 'react'",
       "",
-      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "const ${1:${TM_FILENAME_BASE}}: React.SFC = () => {",
       "  return (",
       "    <div>",
       "      $0",
@@ -390,9 +390,9 @@
   "reactClassPureComponent": {
     "prefix": "rpc",
     "body": [
-      "import React, { PureComponent } from 'react'",
+      "import * as React from 'react'",
       "",
-      "export default class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "export default class ${1:${TM_FILENAME_BASE}} extends React.PureComponent {",
       "  render() {",
       "    return (",
       "      <div>",
@@ -408,9 +408,9 @@
   "reactClassExportPureComponent": {
     "prefix": "rpce",
     "body": [
-      "import React, { PureComponent } from 'react'",
+      "import * as React from 'react'",
       "",
-      "export class ${1:${TM_FILENAME_BASE}} extends PureComponent {",
+      "export class ${1:${TM_FILENAME_BASE}} extends React.PureComponent {",
       "  render() {",
       "    return (",
       "      <div>",
@@ -451,9 +451,9 @@
   "reactFunctionMemoComponent": {
     "prefix": "rmc",
     "body": [
-      "import React, { memo } from 'react'",
+      "import * as React from 'react'",
       "",
-      "export default memo(function ${1:${TM_FILENAME_BASE}}() {",
+      "export default React.memo(function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
       "    <div>",
       "      $0",
